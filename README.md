@@ -19,3 +19,13 @@ The dataset contains information about residential houses, including features su
 4. From description the missing values in amount column are filled.
 
 5. Convert the carpet_area and super_area values in standard unit sqft.
+
+6. Floor number and total number of floors are separated.
+
+7. The furnishing column missing values filled from description column.
+
+8. Make values consistent in overlooking column.
+
+9. Car parking and its status `Open` or `Covered` are separated and convered to appropriate data type.
+
+10. facing and location column is changed to category data type.
