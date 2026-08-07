@@ -29,3 +29,15 @@ The dataset contains information about residential houses, including features su
 9. Car parking and its status `Open` or `Covered` are separated and convered to appropriate data type.
 
 10. facing and location column is changed to category data type.
+
+## Univariate Analysis
+
+1. amount is highly righ skewed with value `154.94` and `98%` of the amount is from `13 Lac` to `6.5 Cr`.
+
+2. `71%` of the data is from `22` cities cumulatively while rest of the `59` cities have small amount of data.
+
+3. In carpet_area column, `98%` of the data lies between `300` to `4000` sqft with uniform graph but overall data is highly positive skewed with `195.028` value.
+
+4. `74.3%` of the property is for resale and `25.6%` is the new property while `0.8%` of prperty is contributed by other transactions.
+
+5. Both the `furnished` and `semi-furnished` are equal but only `15%` of the flats are furnished.
