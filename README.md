@@ -41,3 +41,11 @@ The dataset contains information about residential houses, including features su
 4. `74.3%` of the property is for resale and `25.6%` is the new property while `0.8%` of prperty is contributed by other transactions.
 
 5. Both the `furnished` and `semi-furnished` are equal but only `15%` of the flats are furnished.
+
+6. facing column has `39%` of unavailable data and from not-null values `45%` of the flats are facing towards `East`.
+
+7. overlooking column has `44%` of missing data while it contains subcategories `Main Road`, `Garden/Park` and `Pool`.
+
+8. Only `9%` of the flats having main road, parks and pools.
+
+9. `44.9%` and `41%` of the flats are having main road and parks respectively while ony `14.1%` of the data having pool.
