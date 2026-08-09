@@ -10,42 +10,61 @@ The dataset contains information about residential houses, including features su
 
 ## Data Cleaning
 
-1. Extra index columns is removed.
+1. Extra index columns are removed.
 
 2. Duplicate rows are removed.
 
-3. From title number of bedrooms are extracted.
+3. The number of bedrooms is extracted from the `title` column.
 
-4. From description the missing values in amount column are filled.
+4. Missing values in the `amount` column are filled using information extracted from the `description` column.
 
-5. Convert the carpet_area and super_area values in standard unit sqft.
+5. `carpet_area` and `super_area` values are converted to the standard unit of `sqft`.
 
-6. Floor number and total number of floors are separated.
+6. The floor number and total number of floors are separated into individual columns.
 
-7. The furnishing column missing values filled from description column.
+7. Missing values in the `furnishing` column are filled using information extracted from the `description` column.
 
-8. Make values consistent in overlooking column.
+8. Values in the `overlooking` column are standardized for consistency.
 
-9. Car parking and its status `Open` or `Covered` are separated and convered to appropriate data type.
+9. The number of car parking spaces and parking status (`Open` or `Covered`) are separated and converted to appropriate data types.
 
-10. facing and location column is changed to category data type.
+10. The `facing` and `location` columns are converted to the `category` data type.
+
 
 ## Univariate Analysis
 
-1. amount is highly righ skewed with value `154.94` and `98%` of the amount is from `13 Lac` to `6.5 Cr`.
+1. The `amount` column is highly right-skewed with a skewness value of `154.94`. Approximately `98%` of the properties have prices ranging from `13 Lac` to `6.5 Cr`.
 
-2. `71%` of the data is from `22` cities cumulatively while rest of the `59` cities have small amount of data.
+2. `71%` of the data comes from `22` cities cumulatively, while the remaining `59` cities contribute relatively fewer observations.
 
-3. In carpet_area column, `98%` of the data lies between `300` to `4000` sqft with uniform graph but overall data is highly positive skewed with `195.028` value.
+3. In the `carpet_area` column, `98%` of the properties have a carpet area between `300` and `4,000 sqft`. The distribution is concentrated within this range but is highly positively skewed, with a skewness value of `195.028`.
 
-4. `74.3%` of the property is for resale and `25.6%` is the new property while `0.8%` of prperty is contributed by other transactions.
+4. `74.3%` of the properties are listed for resale, while `25.6%` are new properties. The remaining `0.8%` belong to other transaction types.
 
-5. Both the `furnished` and `semi-furnished` are equal but only `15%` of the flats are furnished.
+5. `Furnished` and `semi-furnished` properties have relatively similar proportions, while only around `15%` of the flats are fully furnished.
 
-6. facing column has `39%` of unavailable data and from not-null values `45%` of the flats are facing towards `East`.
+6. The `facing` column has `39%` missing values. Among the non-missing values, `45%` of the flats face East.
 
-7. overlooking column has `44%` of missing data while it contains subcategories `Main Road`, `Garden/Park` and `Pool`.
+7. The `overlooking` column contains `44%` missing values. Among the available values, the main categories are `Main Road`, `Garden/Park`, and `Pool`.
 
-8. Only `9%` of the flats having main road, parks and pools.
+8. `9%` of the flats have all three overlook views Garden/Park, Main Road and Pool
 
-9. `44.9%` and `41%` of the flats are having main road and parks respectively while ony `14.1%` of the data having pool.
+9. Among the flats with available overlooking information, `44.9%` overlook a Main Road, `41%` overlook a Garden/Park, and `14.1%` overlook a Pool.
+
+10. Only `24` societies have more than `50` flats listed in the dataset, out of `10,376` societies.
+
+11. Most flats have around `2` to `3` bathrooms, with `75%` of the properties having between `1` and `3` bathrooms.
+
+12. On average, each flat has approximately `2` balconies, with most properties having between `1` and `3` balconies.
+
+13. The `car_parking` column has `57.6%` missing values. Among the available values, `34.2%` of the flats have `1` parking space. The distribution is highly right-skewed, with a skewness value of `16.46`.
+
+14. The `ownership` column has `36.5%` missing values. Among the available values, `86.3%` of the flats have `Freehold` ownership.
+
+15. Approximately `98%` of the properties have a `super_area` between `500` and `4,500 sqft`. The distribution is highly right-skewed, with a skewness value of `163.6`.
+
+16. Most flats have `2` to `3` bedrooms.
+
+17. Approximately `98%` of the buildings have between `1` and `30` floors.
+
+18. The `car_parking_status` column has `57.67%` missing values. Among the available values, `86%` of the parking spaces are `Covered`, while `14%` are `Open`.
