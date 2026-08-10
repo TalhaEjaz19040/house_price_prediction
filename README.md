@@ -72,26 +72,24 @@ The dataset contains information about residential houses, including features su
 
 ## Bivariate Analysis
 
-1. `amount` has positive linear relationship with `carpet_area`.
+1. `amount` shows a positive relationship with `carpet_area`, with property prices generally increasing as carpet area increases.
 
-2. Among top 22 cities according to row amount in data, `Gurgaon` and `New-Dehli` has highest median amount while `Bhiwadi` with lowest. 
+2. Among the top 22 cities by number of listings, `Gurgaon` and `New-Delhi` have the highest median property amounts, while `Bhiwadi` has the lowest.
 
-3. `New-Dehli` has the highest IQR range shows amount is more distributed then other cities. While `Rachi` has consistent flat prices due to smallest IQR range.
+3. `New-Delhi` has the largest IQR, indicating greater variation in the middle 50% of property prices. In contrast, `Ranchi` has the smallest IQR, indicating relatively more consistent property prices.
 
-4. `New-Property` has the highest median amount.
+4. `New-Property` has the highest median amount among the transaction types.
 
-5. `New-Property` outliers are very severe as they are at very large gap from the other maximum boxplot range.
+5. `New-Property` has severe high-price outliers, with extreme values located far above the upper whisker of the boxplot.
 
-6. From selected `24` societies, `DLF The Valley Garden` society has the highest median amount. While `Krish Aura` has the the lowest median amount.
+6. Among the selected 24 societies, `DLF The Valley Garden` has the highest median amount, while `Krish Aura` has the lowest.
 
-7. `Omaxe Heights` and `Pacific Golf Estate` has highest IQR range means the amounts are highly distributed in both.
+7. `Omaxe Heights` and `Pacific Golf Estate` have the largest IQRs, indicating greater variation in the middle 50% of property prices within these societies.
 
-8. `Motia Blue Ridge` and `RPS Auria Residences` societies have most consistent property prices as IQR range is very small.
+8. `Motia Blue Ridge` and `RPS Auria Residences` have the smallest IQRs, indicating relatively consistent property prices within these societies.
 
-9. When the number of `bathrooms`, `bedrooms` and `balconies` increases the amount median also increases. Flats with more then `7` bathrooms have larger IQR range showing more flactuation in flat prices.
+9. As the number of bedrooms, bathrooms, and balconies increases, the median amount generally increases**. Properties with more than 7 bathrooms have a particularly large IQR, indicating greater variation in their prices.
 
-10. The exception in `balcony` where the houses with `9 balconies` has very very small IQR range shows the amounts are ideally consistent. This is because there are only 2 flats in data having `9 balconies`.
+10. The `9-balcony` category is an exception, showing a very small IQR and apparently consistent property prices. However, this result is not reliable because only two properties have 9 balconies.
 
-11. Flats with `Power of Attorney` ownership have the lowest amount median while other categories almost have the same.
-
-12 
+11. Properties with `Power of Attorney ownership` have the lowest median amount, while the median amounts of the other ownership categories are relatively similar.
