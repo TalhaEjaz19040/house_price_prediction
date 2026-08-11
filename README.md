@@ -93,3 +93,14 @@ The dataset contains information about residential houses, including features su
 10. The `9-balcony` category is an exception, showing a very small IQR and apparently consistent property prices. However, this result is not reliable because only two properties have 9 balconies.
 
 11. Properties with `Power of Attorney ownership` have the lowest median amount, while the median amounts of the other ownership categories are relatively similar.
+
+
+## Multivariate Analysis
+
+. The `amount` of the flats is related to the `location` ad `society` as data points with the same color are increasing with the same proportion against `carpet_area` and `super_area`.
+
+2. `Ahmedabad` has the highest number of furnished flats `760` and `Bhiwadi` with lowest number of furnished flats `100`.
+
+3. `Gurgaon` has highest number of semi-furnished flats `2200` and `Goa` has lowest number of semi-furnished flats `260`.
+
+4. `Kolkata` has highest number of Unfurnished flats `1900` and `Zirakpur` has lowest number of Unfurnished flats `220`.
