@@ -104,3 +104,14 @@ The dataset contains information about residential houses, including features su
 3. `Gurgaon` has highest number of semi-furnished flats `2200` and `Goa` has lowest number of semi-furnished flats `260`.
 
 4. `Kolkata` has highest number of Unfurnished flats `1900` and `Zirakpur` has lowest number of Unfurnished flats `220`.
+
+## Feature Engineering
+
+1. The `total_floors` and `floors` is changes to categorical column floors less than `11` is `low`, between `11` and `30` is `mid`, from `31` to `60` is high and above `60` is `very high`.
+
+2. It is observed that cost of the flat depends on building floors.
+
+3. By examining ratio between `bedrooms` and `bathrooms` and `carpet_area` few outliers are removed.
+
+4. Flats with `covered` parking has slightly higher amounts then `opened` once.
+
