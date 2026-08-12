@@ -115,3 +115,4 @@ The dataset contains information about residential houses, including features su
 
 4. Flats with `covered` parking has slightly higher amounts then `opened` once.
 
+5. The values missing in `total_floors` are replaced by the value of at which floor the flat is.
