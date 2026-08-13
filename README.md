@@ -116,3 +116,41 @@ The dataset contains information about residential houses, including features su
 4. Flats with `covered` parking has slightly higher amounts then `opened` once.
 
 5. The values missing in `total_floors` are replaced by the value of at which floor the flat is.
+
+6. Unnecessary and for time being created columns are removed 'Unnamed: 0', 'description', 'facing', 'locality', 'carpet/super', 'floor', 'total_floors'.
+
+7. To handle missing values the pipeline is created and each column missing values are filled differently given below:
+
+    - amount : Nothing missing
+
+    - price : Nothing missing
+
+    - location : Nothing missing
+
+    - carpet_area : Nothing missing
+
+    - transaction : Replaced with most frequent values
+
+    - furnishing : Nothing missing
+
+    - overlooking : Replaced with 'Not Available' string
+
+    - society : Replaced with the most repeated society in the same city
+    
+    - bathroom : Equal to the number of bedrooms the flat has.
+    
+    - balcony : Replaced with 0
+    
+    - car_parking : Replaced with most frequent values
+    
+    - ownership : Replaced with most frequent values
+    
+    - super_area : Nothing missing
+    
+    - bedrooms : Equal to the number of bathrooms the flat has.
+    
+    - car_parking_status : Replaced with the status of the car parkings the society mostly have.
+    
+    - total_floors_cat : Replaced with most frequent values
+    
+    - floor_cat : Replaced with most frequent values
