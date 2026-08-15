@@ -154,3 +154,11 @@ The dataset contains information about residential houses, including features su
     - total_floors_cat : Replaced with most frequent values
     
     - floor_cat : Replaced with most frequent values
+
+8. The pipeline is setup for the data flow and each stage of the pipeline does the useful work.
+
+    - First layer fill the missing values on the basis of the given imputers.
+    
+    - Second, the data is moved to the next layer where encoding of categorical and scaling of numerical columns is done.
+
+    - At last, the data is moved inside the model and the model gets trained. 
