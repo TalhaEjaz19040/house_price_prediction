@@ -161,4 +161,14 @@ The dataset contains information about residential houses, including features su
     
     - Second, the data is moved to the next layer where encoding of categorical and scaling of numerical columns is done.
 
-    - At last, the data is moved inside the model and the model gets trained. 
+    - At last, the data is moved inside the model and the model gets trained.
+
+## Linear Regression Model Result
+
+1. The linear regression model has r2_score `0.4174`.
+
+2. The residuals are right-skewed.
+
+3. The model is `heteroscedasticity`.
+
+4. The positive autocorrelation exists with value `1.4314`.
